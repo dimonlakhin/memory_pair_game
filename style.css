@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-image: url(./img/fon.jpg);
+}
+
+.header {
+  margin: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.game_container {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 60px auto;
+}
+
+.cards_item {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  position: relative;
+}
+
+.front_img {
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.back_img {
+  width: 80%;
+  position: absolute;
+  backface-visibility: hidden;
+  top: 10%;
+  left: 10%;
+}
+
+.cards_item {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+
+.back_img {
+  transform: rotateY(180deg);
+}
+
+.click_item {
+  transform: rotateY(180deg);
+}
+
+.none {
+  visibility: hidden;
+}
