@@ -3,32 +3,32 @@
 const biscuitsCards = [
   {
     name: "biscuit_1",
-    image: "/img/biscuit_1.png",
+    image: "./img/biscuit_1.png",
   },
   {
     name: "biscuit_2",
-    image: "/img/biscuit_2.png",
+    image: "./img/biscuit_2.png",
   },
   {
     name: "biscuit_3",
-    image: "/img/biscuit_3.png",
+    image: "./img/biscuit_3.png",
   },
   {
     name: "biscuit_4",
-    image: "/img/biscuit_4.png",
+    image: "./img/biscuit_4.png",
   },
   {
     name: "biscuit_5",
-    image: "/img/biscuit_5.png",
+    image: "./img/biscuit_5.png",
   },
   {
     name: "biscuit_6",
-    image: "/img/biscuit_6.png",
+    image: "./img/biscuit_6.png",
   },
 ];
 const arrCompare = [];
 const arrSumCards = [];
-const imgFront = "/img/front_img.png";
+const imgFront = "./img/front_img.png";
 const dablCards = [...biscuitsCards, ...biscuitsCards];
 const randomCards = dablCards.sort(function () {
   return 0.5 - Math.random();
